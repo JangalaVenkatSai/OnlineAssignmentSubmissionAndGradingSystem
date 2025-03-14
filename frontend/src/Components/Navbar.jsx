@@ -32,7 +32,8 @@ function Navbar(props) {
     <div>
       <nav>
         <div className="logo1">
-          <img src={logo} alt="" />
+          {/* <img src={logo} alt="" /> */}
+          <h3>VS LMS PORTAL</h3>
         </div>
         <div className="navigation">
           <div id="menu-btn">
@@ -129,6 +130,13 @@ function Navbar(props) {
             ) : (
               <li>
                 <button onClick={() => navigate("/login")}>Login/SignUp</button>
+              </li>
+            )}
+            {!authToken && (
+              <li>
+                <button onClick={() => navigate("/adminlogin")}>
+                  Teacher Login
+                </button>
               </li>
             )}
           </ul>

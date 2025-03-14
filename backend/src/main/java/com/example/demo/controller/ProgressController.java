@@ -29,4 +29,6 @@ public class ProgressController {
     public ResponseEntity<String> updateDuration(@RequestBody ProgressRequest request) {
         return progressService.updateDuration(request);
     }
+    
+    
 }

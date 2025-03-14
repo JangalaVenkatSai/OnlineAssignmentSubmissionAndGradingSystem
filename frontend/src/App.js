@@ -22,7 +22,8 @@ import Performance from './Components/DashBoard/Performance';
 import DTutors from './Components/DashBoard/DTutors';
 import certificate from './Components/certificate';
 import Forum from './Components/forum';
-
+import AdminLogin from './Components/AdminLogin';
+import TablePage from './Components/DashBoard/TablePage';
 
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
           <Route path='/Dtutors' Component={DTutors}></Route>
           <Route path='/Performance' Component={Performance} />
           <Route path='*' Component={ErrorPage}></Route>
+          <Route path='/adminlogin' Component={AdminLogin}></Route>
+          <Route path='/tablepage' Component={TablePage}></Route>
         </Routes>
       </BrowserRouter>
       <ToastContainer/>

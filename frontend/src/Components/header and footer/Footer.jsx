@@ -28,7 +28,7 @@ function Footer(){
           <li>Project Fundamentals</li>
         </div>
         <div className="copyright">
-          <p>Copyright ©2023 All rights reserved .</p>
+          {/* <p>Copyright ©2023 All rights reserved .</p> */}
           <div className="pro-links">
             <FontAwesomeIcon icon={faFacebookF} className="i"/>
             <FontAwesomeIcon icon={faInstagram} className="i"/>

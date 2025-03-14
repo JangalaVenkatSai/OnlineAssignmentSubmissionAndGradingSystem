@@ -32,7 +32,7 @@ function Home() {
       <Navbar page={"home"} />
       <div>
         <section id="home">
-          <h2>Enhance your future with EduVerse Academy</h2>
+          <h2>Enhance your future</h2>
           <p>
             {" "}
             OneYes Academy is a massive open online course provider, and its

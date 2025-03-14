@@ -63,6 +63,8 @@ public class UserController {
         return ResponseEntity.ok(Collections.singletonMap("token", token));
     }
 
+    
+    
     private String generateToken(User user) {
         return ("userId=" + user.getId() + ", email=" + user.getEmail());
     }

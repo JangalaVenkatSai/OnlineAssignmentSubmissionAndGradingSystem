@@ -17,8 +17,17 @@ public class User {
     private String profession;
     private String linkedin_url;
     private String github_url;
+    private String role;
     
-    public String getDob() {
+    public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public String getDob() {
 		return dob;
 	}
 

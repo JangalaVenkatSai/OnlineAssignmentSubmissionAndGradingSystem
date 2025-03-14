@@ -13,13 +13,27 @@ public class LearningManagementSystemApplication {
 		SpringApplication.run(LearningManagementSystemApplication.class, args);
 	}
 	
+//	@Bean
+//	public WebMvcConfigurer configure() {
+//		return new WebMvcConfigurer() {
+//			@Override
+//			public void addCorsMappings(CorsRegistry reg) {
+//				reg.addMapping("/**").allowedOrigins("*");
+//			}
+//		};
+//	}
 	@Bean
 	public WebMvcConfigurer configure() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry reg) {
-				reg.addMapping("/**").allowedOrigins("*");
-			}
-		};
+	    return new WebMvcConfigurer() {
+	        @Override
+	        public void addCorsMappings(CorsRegistry registry) {
+	            registry.addMapping("/**")
+	                    .allowedOrigins("http://localhost:3000") 
+	                    .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") 
+	                    .allowedHeaders("*") 
+	                    .allowCredentials(true); 
+	        }
+	    };
 	}
+
 }
